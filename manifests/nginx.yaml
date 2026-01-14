@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
         - name: nginx
-          image: nginx:stable
+          image: nginx:#{Octopus.Release.Number}
           ports:
             - containerPort: 80
 ---
